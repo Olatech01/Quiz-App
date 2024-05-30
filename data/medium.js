@@ -55,6 +55,11 @@ const medium = [
       "answer": ".btn"
     },
     {
+      "question": "What does the viewport meta tag in HTML help with?",
+      "options": ["Setting the character encoding of the document", "Ensuring proper rendering and touch zooming on mobile devices", "Defining the document's title", "Linking external JavaScript files"],
+      "answer": "Ensuring proper rendering and touch zooming on mobile devices"
+    },
+    {
       "question": "How can you get the total number of arguments passed to a function?",
       "options": ["Using args.length property", "Using arguments.length property", "Both of the above", "None of the above"],
       "answer": "Using arguments.length property"

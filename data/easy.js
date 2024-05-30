@@ -35,9 +35,9 @@ const easy = [
       "answer": "/* comment */"
     },
     {
-      "question": "Which attribute is used in HTML to define inline styles?",
-      "options": ["class", "style", "styles", "css"],
-      "answer": "style"
+      "question": "In JavaScript, which method is used to select an element by its ID?",
+      "options": ["getElementByClassName()", "getElementByTagName()", "getElementById()", "querySelector()"],
+      "answer": "getElementById()"
     },
     {
       "question": "What is the correct syntax for referring to an external script called 'app.js'?",
