@@ -57,7 +57,7 @@ const Quiz = () => {
   };
 
   return (
-    <div className="quiz-container flex flex-col gap-[40px] text-white">
+    <div className="w-full flex flex-col gap-[40px] text-white sm:justify-center sm:items-center">
       {showScore ? (
         <div className="score-section border h-[30vh]  rounded-xl flex flex-col gap-3 items-center justify-center px-2">
           You scored {score} out of {questions.length * 2}
@@ -72,15 +72,15 @@ const Quiz = () => {
         </div>
       ) : (
         <>
-          <div className="question-section">
-            <div className="question-count">
-              <span>Question {currentQuestion + 1}</span>/{questions.length}
+          <div className="">
+            <div className="glow">
+              <span className='glow'>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
             <div className="question-text">{questions[currentQuestion].question}</div>
           </div>
-          <div className="answer-section grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-1 gap-3">
             {questions[currentQuestion].options.map((option, index) => (
-              <button key={index} onClick={() => handleAnswerOptionClick(option === questions[currentQuestion].answer)} className='border p-2 rounded-lg'>
+              <button key={index} onClick={() => handleAnswerOptionClick(option === questions[currentQuestion].answer)} className='border p-2 rounded-lg sm:w-full'>
                 {option}
               </button>
             ))}
